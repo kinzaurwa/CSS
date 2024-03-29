@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          display: flex;
+            justify-content: center;
+            align-content: center; 
+            background-color: rgb(141, 216, 141);
+           
+            
+        }
+        
+        .container{
+            border: solid rgb(82, 143, 63);
+            background-color: white;
+            border-radius: 20px;
+            width: 300px;
+            height: 300px;
+           
+        }
+
+        .box{
+            border: solid rgb(118, 134, 118);
+            border-radius: 20px;
+            width: 70px;
+            height: 70px;
+            background-color: rgb(33, 141, 33);
+
+
+            /* animation effects: */
+
+            animation-name: box ;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+        }
+
+
+        @keyframes box{
+            0%{
+               transform: translate(0,0);
+
+            }
+            25%{
+                transform: translate(225px,0);
+
+            }
+
+            50%{
+                transform: translate(225px,225px);
+
+
+            }
+            75%{
+                transform: translate(0px,225px);
+
+
+
+            }
+
+            100%{
+
+            }
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box"></div>
+
+
+    </div>
+
+
+    
+</body>
+</html>

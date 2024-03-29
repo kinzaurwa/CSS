@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container{
+            border: solid black;
+            height: 500px;
+            width: 900px;
+            display: flex;
+            background-color: rgb(233, 136, 119);
+           
+        }
+        .item{
+            border: solid rgb(160, 12, 12);
+            height: 100px;
+            width: 300px;
+            background-color: tomato;
+            padding: 12px 42px;
+            margin: 10px 10px;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+           
+            justify-content: space-evenly;
+
+            align-items: center;
+        }
+
+        #item-1{
+            height: 250px;
+            /* # if want ur box-1 to b greater then rest, then have to 
+            adjust height seprately; */
+            order: 20;
+        }
+
+
+        #item-2{
+            order: 50;
+            flex-grow: 2;
+
+        }
+        #item-3{
+            order: 40;
+        }
+        #item-4{
+            order: 80;
+        }
+        #item-5{
+            order: 10;
+        }
+        /* # bara order phly aye ga chta bad me jsy (10,20,30) */
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>heading</h1>
+    <div class="container">
+        <div class="item" id="item-1">box1</div>
+        <div class="item" id="item-2">box2</div>
+        <div class="item" id="item-3">box3</div>
+        <div class="item" id="item-4">box4</div>
+        <div class="item" id="item-5">box5</div>
+        <div class="item" id="item-6">box6</div>
+
+    </div>
+    
+</body>
+</html>

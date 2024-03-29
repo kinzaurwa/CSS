@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        .container{
+            display: flex;
+           
+
+
+        }
+
+        .item{
+            background-color: rgb(223, 223, 79);
+            border: solid;
+            border-color: tomato;
+            padding: 12px 12px;
+            margin: 20px;
+            /* box-shadow: 12px 20px 20px yellowgreen; */
+            /* box-shadow: -12px -15px yellowgreen; */
+            box-shadow: 12px 10px 20px yellow, 10px 15px 15px green;
+        }
+        .item h2{
+            text-shadow: 12px 12px  7px rgb(37, 37, 36);
+            /* text-shadow: 12px 10px 10px white, 12px 10px 10px black; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="item">
+            <h2>card-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, incidunt.</p>
+
+        </div>
+
+        <div class="item">
+           <h2> this is item-2</h2>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, totam?</p>
+
+        </div>
+
+
+        <div class="item">
+
+           <h2> this is item-3</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, illo!</p>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(4, 2fr);
+            /* grid-column-gap: 3rem;
+            grid-row-gap: 1rem; */
+            grid-gap: 1rem;
+            /* grid-template-rows: repeat(2, 2fr); */
+            
+
+        }
+        .item{
+            background-color: blanchedalmond;
+            border: solid;
+            background-color: tomato;
+            padding: 15px;
+
+        }
+
+        .item:first-child{
+            grid-column-start:1;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end:4;
+
+        }
+
+        
+        
+
+        
+
+       
+           
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is an item-1</div>
+        <div class="item">this is an item-2</div>
+        <div class="item">this is an item-3</div>
+        <div class="item">this is an item-4</div>
+        <div class="item">this is an item-5</div>
+        <div class="item">this is an item-6</div>
+        <div class="item">this is an item-7</div>
+        <div class="item">this is an item-8</div>
+        <div class="item">this is an item-9</div>
+        <div class="item">this is an item-11</div>
+        <div class="item">this is an item-12</div>
+        <div class="item">this is an item-13</div>
+        <div class="item">this is an item-14</div>
+        <div class="item">this is an item-15</div>
+        <div class="item">this is an item-16</div>
+    </div>
+    
+</body>
+</html>

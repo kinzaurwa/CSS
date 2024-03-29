@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            background-color: rgb(59, 117, 57);
+        }
+        .box{
+            background-color: rgb(131, 241, 97);
+            width: 90px;
+            height: 100px;
+            position: relative;
+            /* animation-name:animate; */
+            animation-name:animate2;
+            animation-duration: 5s; 
+            animation-iteration-count:5;
+            /* animation-timing-function:ease-in; */
+        }
+
+        /* @keyframes animate {
+           from{ 
+                background-color:rgb(65, 231, 19);
+                width: 100%;
+                
+            }
+             to{
+                width: 10%;
+                 
+            }
+        } */
+
+        @keyframes animate2{
+            0%{
+                top: 0px;
+                left: 0;
+            }
+            25%{
+                top: 200px;
+                left: 0;
+                /* move straight downward */
+            }
+            75%{
+                top: 250px;
+                left: 30%;
+                /* move to rite side */
+            }
+            100%{
+                top: 0px;
+                left: 350px;
+                /*  move straight upward */
+                
+            }
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

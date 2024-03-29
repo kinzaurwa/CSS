@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room</title>
+    <style>
+        body {
+            background-image: url(4444.jpeg );
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .index {
+            border: solid rgba(82, 9, 9);
+            background-color: rgba(165, 42, 42, 0.753);
+
+        }
+
+        .index li {
+             float: left;
+            margin: 10px 50px;
+            padding: 0px 43px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        li a {
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .index a {
+            text-decoration: none;
+            color: rgb(233, 219, 219);
+
+        }
+
+        .index input {
+            border-radius: 30px;
+            border: solid rgb(82, 33, 33);
+            /* padding: 12px 12px; */
+            margin: 10px 10px;
+        }
+
+        .box {
+            border: solid rgb(82, 9, 9);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: rgba(165, 42, 42, 0.685);
+            width: 400px;
+            height: 500px;
+            float: right;
+            margin: 40px;
+        }
+
+        .room {
+            padding: 12px 12px;
+            font-weight: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+        input {
+            padding: 5px 5px;
+            border-radius: 10px;
+
+
+        }
+
+        h2 {
+            font-family: 'Gill Sans';
+            font-weight: 600;
+
+        }
+
+        .text {
+
+            width: 500px;
+            height: 200px;
+            color: rgb(236, 228, 226);
+            margin: 250px 200px 0px 100px;
+            padding: 20px 20px;
+            background-color: rgba(165, 42, 42, 0.445);
+        }
+        .text::first-letter{
+            font-size: xx-large;
+            font-weight: 900;
+          
+        }
+
+        button {
+            border-radius: 5px;
+            background-color: rgb(172, 40, 17);
+            color: white;
+            margin: 50px 300px;
+            font-weight: bolder;
+            font-size: medium;
+
+        }
+
+        button:hover {
+            transform: scale(1.2);
+            box-shadow: black 2px 2px 2px;
+        }
+
+        .complex input,
+        label {
+            font-weight: bolder;
+            font-size: larger;
+
+        }
+
+        .search input:hover {
+            transform: scale(1.1);
+            box-shadow: black 2px 2px 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="index">
+            <ul>
+                <li><a href="#">home</a> </li>
+                <li><a href="#">about </a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">services</a></li>
+                <div class="search">
+                    <!-- this is search box -->
+                    <input type="text" name="search" id="search" placeholder="search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="box">
+
+        <h3 class="room">Book a Room:</h3>
+        &nbsp;&nbsp;<lable>Name</lable>:
+        <input type="text" placeholder="first Name" size="15">
+        <input type="text" placeholder="second Name" size="15"><br>
+        <br>
+        &nbsp;&nbsp;&nbsp;<lable>E-Mail</lable>:
+        <input type="text" placeholder="ex;myname@example.com" size="35"><br>
+        <br>
+        &nbsp;&nbsp;<lable>Phone-Number</lable>:
+        <input type="text" placeholder="0000-000000"><br>
+        <br>
+        &nbsp;&nbsp;<lable>Check-in Date</lable>
+        <input type="text" placeholder="Day" size="2">-<input type="text" placeholder="Month" size="2">-<input
+            type="text" placeholder="Year" size="2"><br>
+        <br>
+        &nbsp;&nbsp;<lable>Check-out Date</lable>
+        <input type="text" placeholder="Day" size="2">-<input type="text" placeholder="Month" size="2">-<input
+            type="text" placeholder="Year" size="2"><br>
+        <br>
+
+
+        <h2 class="complex">Accomodation Rating</h2>
+        &nbsp;&nbsp;<lable>ratings</lable>
+        <label for="1 Star">1 Star</label>
+        <input type="radio" id="1 Star" name="ratings">&#128515;<br>
+
+        &nbsp;&nbsp;<lable>ratings</lable>
+        <label for="2 Star">2 Star</label>
+        <input type="radio" id="2 Star" name="ratings">&#128522;<br>
+
+
+        &nbsp;&nbsp;<lable>ratings</lable>
+        <label for="2 Star">3 Star</label>
+        <input type="radio" id="3 Star" name="ratings">&#128529;<br>
+
+
+        &nbsp;&nbsp;<lable>ratings</lable>
+        <label for="2 Star">3 Star</label>
+        <input type="radio" id="3 Star" name="ratings">&#128543;<br>
+
+
+
+        &nbsp;&nbsp;<lable>ratings</lable>
+        <label for="2 Star">4 Star</label>
+        <input type="radio" id="4 Star" name="ratings">&#129314;<br>
+
+
+
+
+
+
+
+
+
+
+    </aside>
+
+    <div class="text">Our hotels has a wide variety of fully furnished and fully occupied rooms!for every guest whether you are travelling
+    on business or with famuly. we have what you need or want for your stay.
+
+        <button>Reserve!</button>
+    </div>
+
+
+</body>
+
+</html>
